@@ -9,18 +9,18 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import java.util.List;
 
-@Configuration
-public class SpringWebConfig extends WebMvcConfigurationSupport {
+//@Configuration
+public class SpringWebConfig {
 
-    protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        converters.add(converter());
-        addDefaultHttpMessageConverters(converters);
-    }
+//    protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+//        converters.add(converter());
+//        addDefaultHttpMessageConverters(converters);
+//    }
 
-    @Bean
-    MappingJackson2HttpMessageConverter converter() {
-        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
-        return converter;
-    }
+//    @Bean
+//    MappingJackson2HttpMessageConverter converter() {
+//        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+//        return converter;
+//    }
 
 }
